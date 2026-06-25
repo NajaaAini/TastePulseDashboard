@@ -2532,7 +2532,7 @@ elif st.session_state.active_page == "About":
     - Researchers: Analyze consumer behavior trends  
     """)
     st.divider()
-    st.markdown("##Project Profiles")
+    st.markdown("### Project Profiles")
     st.write("")
 
     # ==================== ROW 1: LEADER & DEVELOPER ====================
