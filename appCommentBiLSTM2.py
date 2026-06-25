@@ -2546,7 +2546,7 @@ elif st.session_state.active_page == "About":
             # Increased side column weights to constrain the center image size
             img_left, img_mid, img_right = st.columns([1.5, 1.0, 1.5])
             with img_mid:
-                st.image("juhaida.jpeg", use_container_width=True)
+                st.image("juhaida.jpeg", use_column_width=True)
                 
             st.markdown("""
             <div style="text-align: center; margin-top: 15px;">
@@ -2564,7 +2564,7 @@ elif st.session_state.active_page == "About":
             
             img_left, img_mid, img_right = st.columns([1.5, 1.0, 1.5])
             with img_mid:
-                st.image("najaa.png", use_container_width=True)
+                st.image("najaa.png", use_column_width=True)
                 
                 # --- CENTERING THE BUTTON HERE ---
                 # Create a small sub-grid to isolate and center the button element
@@ -2602,7 +2602,7 @@ elif st.session_state.active_page == "About":
         with st.container(border=True):
             img_left, img_mid, img_right = st.columns([1.6, 0.8, 1.6])
             with img_mid:
-                st.image("faiz.jpeg", use_container_width=True)
+                st.image("faiz.jpeg", use_column_width=True)
                 
             st.markdown("""
             <div style="text-align: center; margin-top: 10px;">
@@ -2616,7 +2616,7 @@ elif st.session_state.active_page == "About":
         with st.container(border=True):
             img_left, img_mid, img_right = st.columns([1.6, 0.8, 1.6])
             with img_mid:
-                st.image("mak.jpeg", use_container_width=True)
+                st.image("mak.jpeg", column=True)
                 
             st.markdown("""
             <div style="text-align: center; margin-top: 10px;">
