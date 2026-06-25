@@ -2536,7 +2536,7 @@ elif st.session_state.active_page == "About":
     st.write("")
 
     # ==================== ROW 1: LEADER & DEVELOPER ====================
- row1_col1, row1_col2 = st.columns(2)
+    row1_col1, row1_col2 = st.columns(2)
 
     with row1_col1:
         with st.container(border=True):
