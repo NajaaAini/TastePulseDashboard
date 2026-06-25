@@ -2519,7 +2519,7 @@ elif st.session_state.active_page == "About":
     st.write("")
     col1, col2, col3 = st.columns([1.5, 2.0, 1.5])
     with col2:
-        st.image("KDD.png", caption="Data Processing Workflow", use_container_width=True)
+        st.image("KDD.png", caption="Data Processing Workflow", use_column_width=True)
     st.divider()
     # ===== SYSTEM VALUE =====
     st.markdown("""
