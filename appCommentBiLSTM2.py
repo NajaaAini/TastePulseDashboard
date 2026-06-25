@@ -2597,7 +2597,7 @@ elif st.session_state.active_page == "About":
     st.markdown("### 📚 Other Supervised Projects")
     st.write("")
 
- st.markdown("### 📚 Other Supervised Projects")
+    st.markdown("### 📚 Other Supervised Projects")
     st.write("")
     
     row2_col1, row2_col2 = st.columns(2)
