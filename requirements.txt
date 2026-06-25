@@ -1,0 +1,15 @@
+streamlit
+pandas
+numpy
+malaya
+wordcloud
+matplotlib
+plotly
+scikit-learn
+transformers
+nltk
+tensorflow
+streamlit-js-eval
+geopy
+folium
+streamlit-folium
