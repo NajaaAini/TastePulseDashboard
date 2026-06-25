@@ -2536,99 +2536,71 @@ elif st.session_state.active_page == "About":
     st.write("")
 
     # ==================== ROW 1: LEADER & DEVELOPER ====================
-    row1_col1, row1_col2 = st.columns(2)
+    # ==============================================================================
+# SECTION: SUPERVISOR & DEVELOPER PROFILE
+# ==============================================================================
 
-    with row1_col1:
-        with st.container(border=True):
-            st.markdown("<h3 style='text-align: center; margin-top: 0; color: #000000; font-weight: 800; font-size: 1.6rem;'>📋 Project Supervisor</h3>", unsafe_allow_html=True)
-            st.divider()
-            
-            # Increased side column weights to constrain the center image size
-            img_left, img_mid, img_right = st.columns([1.5, 1.0, 1.5])
-            with img_mid:
-                st.image("juhaida.jpeg", use_column_width=True)
-                
-            st.markdown("""
-            <div style="text-align: center; margin-top: 15px;">
-                <h3 style="margin: 5px 0; color: #000000; font-size: 1.4rem; font-weight: 800;">ASSOC. PROF. TS. DR. JUHAIDA BINTI ABU BAKAR</h3>
-                <p style="font-size: 1.25rem; margin: 6px 0; font-weight: 800; color: #000000;">Project Supervisor</p>
-                <p style="font-size: 1.15rem; margin: 4px 0; font-weight: 700; color: #000000;"><b>Institution:</b> Universiti Utara Malaysia (UUM)</p>
-                <p style="font-size: 1.15rem; margin: 4px 0; font-weight: 700; color: #000000;"><b>Focus:</b> Data Analytics, NLP, Intelligent Systems</p>
-            </div>
-            """, unsafe_allow_html=True)
+row1_col1, row1_col2 = st.columns(2)
 
-    with row1_col2:
-        with st.container(border=True):
-            st.markdown("<h3 style='text-align: center; margin-top: 0; color: #000000; font-weight: 800; font-size: 1.6rem;'>👨‍💻 System Developer</h3>", unsafe_allow_html=True)
-            st.divider()
-            
-            img_left, img_mid, img_right = st.columns([1.5, 1.0, 1.5])
-            with img_mid:
-                st.image("najaa.png", use_column_width=True)
-                
-                # --- CENTERING THE BUTTON HERE ---
-                # Create a small sub-grid to isolate and center the button element
-                btn_l, btn_m, btn_r = st.columns([1, 1.2, 1])
-                with btn_m:
-                    if st.button("Contact"):
-                    # Wrap the email address in a clickable mailto anchor link
-                        st.markdown("""
-                            <p style='text-align: center; color: #000000; font-weight: 700; font-size: 1.0rem; margin-top: 5px;'>
-                                Email: <a href="mailto:nur_najaa_aini@soc.uum.edu.my" style="color: #1E3A8A; text-decoration: underline; font-weight: 800;">nur_najaa_aini@soc.uum.edu.my</a>
-                            </p>
-                        """, unsafe_allow_html=True)
-                    
-            st.markdown("""
-            <div style="text-align: center; margin-top: 15px;">
-                <h3 style="margin: 5px 0; color: #000000; font-size: 1.4rem; font-weight: 800;">NUR NAJAA AINI BINTI MOHD PUZI</h3>
-                <p style="font-size: 1.25rem; margin: 6px 0; font-weight: 800; color: #000000;">Final Year Student</p>
-                <p style="font-size: 1.15rem; margin: 4px 0; font-weight: 700; color: #000000;"><b>Project - </b> TastePulse: Sentiment Analysis of Food Tourism in Northern Community</p>
-            </div>
-            """, unsafe_allow_html=True)
-
-
-            
-    st.write("")
+with row1_col1:
+    st.markdown("<h3 style='text-align: center; color: #000000; font-weight: 800; font-size: 1.6rem;'>📋 Project Supervisor</h3>", unsafe_allow_html=True)
     st.divider()
-    st.write("")
-
-
-    # ==================== ROW 2: OTHER SUPERVISED PROJECTS ====================
-    st.markdown("### 📚 Other Supervised Projects")
-    st.write("")
-
-    st.markdown("### 📚 Other Supervised Projects")
-    st.write("")
     
-    row2_col1, row2_col2 = st.columns(2)
-    
-    with row2_col1:
-        # Removed container border
-        st.markdown("<div style='display: flex; justify-content: center;'>", unsafe_allow_html=True)
-        st.image("faiz.jpeg", width=150) # Use width or use_column_width
-        st.markdown("</div>", unsafe_allow_html=True)
+    # Centered Image using CSS
+    st.markdown("<div style='display: flex; justify-content: center;'>", unsafe_allow_html=True)
+    st.image("juhaida.jpeg", width=200)
+    st.markdown("</div>", unsafe_allow_html=True)
         
-        st.markdown("""
-        <div style="text-align: center; margin-top: 10px;">
-            <h4 style="margin: 5px 0; color: #000000; font-size: 1.25rem; font-weight: 800;">NUR FAIZLYANA BINTI MOHD KAMARUL ARIFFIN</h4>
-            <p style="font-size: 1.1rem; margin: 4px 0; font-weight: 700; color: #000000;">Final Year Project</p>
-            <p style="font-size: 1.05rem; margin: 4px 0; font-weight: 700; color: #000000; font-style: italic;">Title - TastePulse: Sentiment Analysis of Food Tourism in Northern Community</p>
-        </div>
-        """, unsafe_allow_html=True)
+    st.markdown("""
+    <div style="text-align: center; margin-top: 15px;">
+        <h3 style="margin: 5px 0; color: #000000; font-size: 1.4rem; font-weight: 800;">ASSOC. PROF. TS. DR. JUHAIDA BINTI ABU BAKAR</h3>
+        <p style="font-size: 1.25rem; margin: 6px 0; font-weight: 800; color: #000000;">Project Supervisor</p>
+        <p style="font-size: 1.15rem; margin: 4px 0; font-weight: 700; color: #000000;"><b>Institution:</b> UUM</p>
+    </div>
+    """, unsafe_allow_html=True)
+
+with row1_col2:
+    st.markdown("<h3 style='text-align: center; color: #000000; font-weight: 800; font-size: 1.6rem;'>👨‍💻 System Developer</h3>", unsafe_allow_html=True)
+    st.divider()
     
-    with row2_col2:
-        # Removed container border
-        st.markdown("<div style='display: flex; justify-content: center;'>", unsafe_allow_html=True)
-        st.image("mak.jpeg", width=150) # Fixed the 'column=True' typo
-        st.markdown("</div>", unsafe_allow_html=True)
-        
-        st.markdown("""
-        <div style="text-align: center; margin-top: 10px;">
-            <h4 style="margin: 5px 0; color: #000000; font-size: 1.25rem; font-weight: 800;">MAK SHEI WEN</h4>
-            <p style="font-size: 1.1rem; margin: 4px 0; font-weight: 700; color: #000000;">Final Year Project</p>
-            <p style="font-size: 1.05rem; margin: 4px 0; font-weight: 700; color: #000000; font-style: italic;">Title - ThemePulse: Topic Modeling of Food Tourism in Northern Community</p>
-        </div>
-        """, unsafe_allow_html=True)
+    # Centered Image using CSS
+    st.markdown("<div style='display: flex; justify-content: center;'>", unsafe_allow_html=True)
+    st.image("najaa.png", width=200)
+    st.markdown("</div>", unsafe_allow_html=True)
+    
+    # Centered Contact Button using CSS
+    st.markdown("<div style='display: flex; justify-content: center; margin-top: 10px;'>", unsafe_allow_html=True)
+    if st.button("Contact"):
+        st.markdown("<p style='text-align: center;'>Email: <a href='mailto:nur_najaa_aini@soc.uum.edu.my'>nur_najaa_aini@soc.uum.edu.my</a></p>", unsafe_allow_html=True)
+    st.markdown("</div>", unsafe_allow_html=True)
+    
+    st.markdown("""
+    <div style="text-align: center; margin-top: 15px;">
+        <h3 style="margin: 5px 0; color: #000000; font-size: 1.4rem; font-weight: 800;">NUR NAJAA AINI BINTI MOHD PUZI</h3>
+        <p style="font-size: 1.25rem; margin: 6px 0; font-weight: 800; color: #000000;">Final Year Student</p>
+    </div>
+    """, unsafe_allow_html=True)
+
+st.divider()
+
+# ==============================================================================
+# SECTION: OTHER PROJECTS
+# ==============================================================================
+
+st.markdown("### 📚 Other Supervised Projects")
+row2_col1, row2_col2 = st.columns(2)
+
+with row2_col1:
+    st.markdown("<div style='display: flex; justify-content: center;'>", unsafe_allow_html=True)
+    st.image("faiz.jpeg", width=150)
+    st.markdown("</div>", unsafe_allow_html=True)
+    st.markdown("<div style='text-align: center;'><b>NUR FAIZLYANA BINTI MOHD KAMARUL ARIFFIN</b></div>", unsafe_allow_html=True)
+
+with row2_col2:
+    st.markdown("<div style='display: flex; justify-content: center;'>", unsafe_allow_html=True)
+    st.image("mak.jpeg", width=150)
+    st.markdown("</div>", unsafe_allow_html=True)
+    st.markdown("<div style='text-align: center;'><b>MAK SHEI WEN</b></div>", unsafe_allow_html=True)
 
 
 # ==================== FOOTER ====================
