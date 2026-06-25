@@ -9,6 +9,7 @@ nltk>=3.8.0
 folium>=0.16.0
 streamlit-folium>=0.20.0
 geopy>=2.4.0
+streamlit-js-eval>=0.1.7
 malaya>=5.0
 tensorflow>=2.13.0
 protobuf>=3.20.0
