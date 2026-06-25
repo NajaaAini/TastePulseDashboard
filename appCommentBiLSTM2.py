@@ -2598,37 +2598,37 @@ elif st.session_state.active_page == "About":
     st.write("")
 
  st.markdown("### 📚 Other Supervised Projects")
-st.write("")
-
-row2_col1, row2_col2 = st.columns(2)
-
-with row2_col1:
-    # Removed container border
-    st.markdown("<div style='display: flex; justify-content: center;'>", unsafe_allow_html=True)
-    st.image("faiz.jpeg", width=150) # Use width or use_column_width
-    st.markdown("</div>", unsafe_allow_html=True)
+    st.write("")
     
-    st.markdown("""
-    <div style="text-align: center; margin-top: 10px;">
-        <h4 style="margin: 5px 0; color: #000000; font-size: 1.25rem; font-weight: 800;">NUR FAIZLYANA BINTI MOHD KAMARUL ARIFFIN</h4>
-        <p style="font-size: 1.1rem; margin: 4px 0; font-weight: 700; color: #000000;">Final Year Project</p>
-        <p style="font-size: 1.05rem; margin: 4px 0; font-weight: 700; color: #000000; font-style: italic;">Title - TastePulse: Sentiment Analysis of Food Tourism in Northern Community</p>
-    </div>
-    """, unsafe_allow_html=True)
-
-with row2_col2:
-    # Removed container border
-    st.markdown("<div style='display: flex; justify-content: center;'>", unsafe_allow_html=True)
-    st.image("mak.jpeg", width=150) # Fixed the 'column=True' typo
-    st.markdown("</div>", unsafe_allow_html=True)
+    row2_col1, row2_col2 = st.columns(2)
     
-    st.markdown("""
-    <div style="text-align: center; margin-top: 10px;">
-        <h4 style="margin: 5px 0; color: #000000; font-size: 1.25rem; font-weight: 800;">MAK SHEI WEN</h4>
-        <p style="font-size: 1.1rem; margin: 4px 0; font-weight: 700; color: #000000;">Final Year Project</p>
-        <p style="font-size: 1.05rem; margin: 4px 0; font-weight: 700; color: #000000; font-style: italic;">Title - ThemePulse: Topic Modeling of Food Tourism in Northern Community</p>
-    </div>
-    """, unsafe_allow_html=True)
+    with row2_col1:
+        # Removed container border
+        st.markdown("<div style='display: flex; justify-content: center;'>", unsafe_allow_html=True)
+        st.image("faiz.jpeg", width=150) # Use width or use_column_width
+        st.markdown("</div>", unsafe_allow_html=True)
+        
+        st.markdown("""
+        <div style="text-align: center; margin-top: 10px;">
+            <h4 style="margin: 5px 0; color: #000000; font-size: 1.25rem; font-weight: 800;">NUR FAIZLYANA BINTI MOHD KAMARUL ARIFFIN</h4>
+            <p style="font-size: 1.1rem; margin: 4px 0; font-weight: 700; color: #000000;">Final Year Project</p>
+            <p style="font-size: 1.05rem; margin: 4px 0; font-weight: 700; color: #000000; font-style: italic;">Title - TastePulse: Sentiment Analysis of Food Tourism in Northern Community</p>
+        </div>
+        """, unsafe_allow_html=True)
+    
+    with row2_col2:
+        # Removed container border
+        st.markdown("<div style='display: flex; justify-content: center;'>", unsafe_allow_html=True)
+        st.image("mak.jpeg", width=150) # Fixed the 'column=True' typo
+        st.markdown("</div>", unsafe_allow_html=True)
+        
+        st.markdown("""
+        <div style="text-align: center; margin-top: 10px;">
+            <h4 style="margin: 5px 0; color: #000000; font-size: 1.25rem; font-weight: 800;">MAK SHEI WEN</h4>
+            <p style="font-size: 1.1rem; margin: 4px 0; font-weight: 700; color: #000000;">Final Year Project</p>
+            <p style="font-size: 1.05rem; margin: 4px 0; font-weight: 700; color: #000000; font-style: italic;">Title - ThemePulse: Topic Modeling of Food Tourism in Northern Community</p>
+        </div>
+        """, unsafe_allow_html=True)
 
 
 # ==================== FOOTER ====================
